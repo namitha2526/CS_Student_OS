@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --radius-glass: 1.25rem;
+  --shadow-glass: 0 18px 60px rgba(0, 0, 0, 0.45);
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-zinc-950 text-zinc-100 antialiased font-sans;
+    background-image:
+      radial-gradient(1200px 800px at 10% -10%, rgba(99, 102, 241, 0.35), transparent 55%),
+      radial-gradient(900px 600px at 90% 0%, rgba(236, 72, 153, 0.22), transparent 50%),
+      radial-gradient(800px 500px at 50% 110%, rgba(34, 211, 238, 0.12), transparent 55%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    @apply bg-indigo-500/40 text-white;
+  }
+}
