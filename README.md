@@ -93,6 +93,4 @@ Screenshots are intentionally omitted from the repo to keep the tree lightweight
 - Real GitHub + LeetCode integrations behind user-supplied tokens
 - Optional cloud sync with encrypted backups
 
-## License
 
-MIT (recommended for portfolio projects).
